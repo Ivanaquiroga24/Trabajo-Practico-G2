@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing_Page</title>
+  <link rel="stylesheet" type="text/css" href="./estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,700;0,900;1,100&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script defer src="MainPP.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#ocultar").click(function () {
+        $(".imagenesfooter").hide();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 id="inicio">
+      <img class="img" src="./img/logo_transparent(6).png" alt="Logo" />
+    </h1>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <a class="texto" href="#inicio">Inicio</a>
+      <a class="texto" href="#quienes">Quiénes Somos</a>
+      <a class="texto" href="#cartelera">Cartelera</a>
+      <a class="texto" href="#susc">Suscríbete</a>
+    </ul>
+  </nav>
+  <div>
+    <p id="elTeatro">"El teatro es la poesía que se sale del libro para hacerse humana"</p>
+    <p>"Federico García Lorca</p>
+  </div>
+
+
+  <section class="quienes">
+    <h2 id="quienes">Quienes Somos</h2>
+    <p>TickArte es una solución que cubre todos los procesos asociados a la reserva, administración, venta y emisión de tickets vía Internet.</p>
+    <div class="boxing">
+      <div class="box-shadow">
+        <ul id="nombres">
+          <li>Adriana Suarez<img src="./imagenes/Adriana.jpeg" alt="Adriana" /></li>
+          <li>Ivana Quiroga<img src="./imagenes/Ivana.jpeg" alt="Ivana" /></li>
+          <li>Carla Ancarola<img src="./imagenes/carla.jpeg" alt="Carla" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2 id="cartelera">Cartelera</h2>
+    <div class="carrusel">
+      <div class="grande">
+        <img src="./img/el famtasma.jpg" alt="imagen 1" class="img">
+        <img src="./img/el conde.jpg" alt="imagen 2" class="img">
+        <img src="./img/el lago.jpg" alt="imagen 3" class="img">
+        <img src="./img/romeo y julieta.jpg" alt="imagen 4" class="img">
+      </div>
+      <ul class="puntos">
+        <li class="punto activo"></li>
+        <li class="punto"></li>
+        <li class="punto"></li>
+        <li class="punto"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="suscribete">
+    <h2 id="susc">Suscríbete...!!</h2>
+    <p>Suscribite y no te pierdas los mejores estrenos.!! </p>
+    <form action="#">
+      <input type="Nombre y Apellido" class="nombre" placeholder="Ingresa nombre y Apellido" />
+      <input type="email" class="campo" placeholder="Ingresa tu email" />
+      <input type="submit" value="Suscribir" class="button" />
+    </form>
+  </section>
+
+  <section>
+    <div id="contenedor">
+      <h4><Span>Formulario de reclamo</Span></h4>
+      <h5 id="h5">Escriba aqui su reclamo,en breve responderemos su inquietud</h5>
+      <formulario accion="" class="formulario"></formulario>
+      <ul id="reclamo" class="header">
+        <li>
+          <label for="name" class="form__label">Nombre</label>
+          <input type="text" class="form__input" name="nombre" placeholder="Nombre" id="name">
+        </li>
+        <li>
+          <label for="direccion" class="form__label">Direccion:</label>
+          <input type="text" class="form__input" name="Direccion" placeholder=Direccion id="direccion">
+        </li>
+        <li>
+          <label for=" correo" class="form__label"> Correo</label>
+          <input type="text" class="form__input" name="Correo" placeholder="e-mail" id=" correo">
+        </li>
+        <h6>Si aun no se arrepintio escriba su texto</h6>
+        <li>
+          <textarea class="form__text" name="Mensaje"></textarea>
+        </li>
+        <li>
+          <input id="enviar" type="submit" class="boton" value="Enviar su reclamo">
+          <a href=""></a>
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <div>
+        <h7> TICKETS FALSOS </h7>
+        <h8>SÓLO SE RECONOCERÁN LAS ENTRADAS COMPRADAS EN NUESTROS SITIOS OFICIALES</h8>
+      </div>
+      <div id="boton">
+        <a href="http://www.ticketportal.com.ar/puntos-de-venta-ticketportal.html"> <button class=boton
+            name="PUNTOS DE VENTA">PUNTOS DE VENTA</button></a>
+        <a href="http://www.ticketportal.com.ar/guia-de-compra.php"> <button class=boton name="GUIA DE COMPRAS">GUIA DE
+            COMPRAS</button></a>
+        <a href="http://www.ticketportal.com.ar/faq.html"><button class=boton name="button">PREGUNTAS
+            FRECUENTES</button></a>
+        <a href="#inicio"><button class=boton name="button">INICIO</button></a>
+      </div>
+      <div id="imagenesfooter">
+        <img class=imagenesfooter src="./img/afip.png">
+        <img class=imagenesfooter src="./img/OcaLogo21.png">
+        <img class=imagenesfooter src="./img/oto-blanco-02.png">
+        <img class=imagenesfooter src="./img/responsable-registrado_registro-nacional-de-bases-de-datos_2019.jpg">
+      </div>
+      <div>
+        <p id="final">Copyright 2023 TicketArte. Todos los derechos reservados (mentira). Política de Privacidad (no
+          tanto) •
+          <button id=ocultar class=imagenesfooter> Ocultar </button>
+      </div>
+
+    </footer>
+
+</body>
+
+</html>
